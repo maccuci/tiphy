@@ -15,7 +15,7 @@ export default function DropdownMenu({ className }: Props) {
     return (
         <Menu as="div" className={`${className} relative inline-block text-left`}>
             <div className="flex gap-2">
-            <Link to={'#'} className="mr-[12.5rem] max-sm:mr-[11.5rem]"><AiOutlineHome size={30} /></Link>
+                <Link to={'/'} className="mr-[12.5rem] max-sm:mr-[11.5rem] pb-2"><AiOutlineHome size={30} /></Link>
                 <AiOutlineSearch size={30} />
                 <AiOutlineShopping size={30} />
                 <Menu.Button className="inline-flex rounded-md text-sm font-medium shadow-sm focus:outline-none focus:ring-2 focus:ring-[#01DBB2] focus:ring-offset-2 focus:ring-offset-gray-100 transition-all"
@@ -32,7 +32,7 @@ export default function DropdownMenu({ className }: Props) {
                 leaveFrom="transform opacity-100 scale-100"
                 leaveTo="transform opacity-0 scale-95"
             >
-                <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md border border-zinc-400 bg-green-50 shadow-xl ring-1 ring-black ring-opacity-5 focus:outline-none divide-zinc-400 ">
+                <Menu.Items className="absolute right-0 z-10 mt-2 w-56 origin-top-right rounded-md border border-zinc-400 bg-slate-50 shadow-xl ring-1 ring-black ring-opacity-5 focus:outline-none divide-zinc-400 ">
                     <div className="py-1">
                         <div className="px-3 py-2 uppercase font-bold text-xs">
                             Categories
@@ -40,10 +40,10 @@ export default function DropdownMenu({ className }: Props) {
                         <DropdownMenuItem href='/keyboards'>
                             <div className="flex">
                                 <img src="https://cdn.shopify.com/s/files/1/0268/7297/1373/products/Halo96_Main01_221129_400x.jpg?v=1669707801" width={32} alt="" className='mr-1' />
-                                <p className='flex'>
+                                <Link to={'/keyboards'} className='flex'>
                                     Keyboards
                                     <IoIosArrowForward className='ml-[5rem] mt-1' />
-                                </p>
+                                </Link>
                             </div>
                         </DropdownMenuItem>
                         <DropdownMenuItem href='/keycaps'>

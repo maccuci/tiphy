@@ -9,6 +9,7 @@ import { GrAmex } from 'react-icons/gr'
 import { SiApplepay, SiMastercard, SiPaypal, SiVisa, SiDiscover } from 'react-icons/si'
 import { TbBrandMeta } from 'react-icons/tb'
 import { isMobile } from 'react-device-detect'
+import { Link } from 'react-router-dom'
 
 export function Footer() {
     const { register, handleSubmit } = useForm()
@@ -20,10 +21,10 @@ export function Footer() {
                     <li>
                         <a className='flex mt-2' href="#">
                             <img src="https://cdn.shopify.com/s/files/1/0268/7297/1373/products/Halo96_Main01_221129_400x.jpg?v=1669707801" width={42} alt="" />
-                            <p className='flex mt-2 ml-2.5'>
+                            <Link to={"/keyboards"} className='flex mt-2 ml-2.5'>
                                 Keyboards
                                 <IoIosArrowForward className='ml-[8.5rem] mt-1' />
-                            </p>
+                            </Link>
                         </a>
                     </li>
                     <li>
