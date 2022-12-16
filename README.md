@@ -6,4 +6,3 @@ The project is a clone of [NuPhy](https://nuphy.com/). My version isn't a **"REA
 
 <h3>Responsive Design</h3><br>
 <img src="https://github.com/maccuci/tiphy/blob/main/public/device.gif">
-[device.gif](https://github.com/maccuci/tiphy/blob/main/public/device.gif)
