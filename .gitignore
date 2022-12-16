@@ -25,3 +25,7 @@ dist-ssr
 
 src/
 src/*
+./src/
+./src/*
+./public/
+./public/*
