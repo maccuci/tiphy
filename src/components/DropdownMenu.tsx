@@ -15,7 +15,7 @@ export default function DropdownMenu({ className }: Props) {
     return (
         <Menu as="div" className={`${className} relative inline-block text-left`}>
             <div className="flex gap-2">
-            <Link to={'#'} className="mr-[12.5rem]"><AiOutlineHome size={30} /></Link>
+            <Link to={'#'} className="mr-[12.5rem] max-sm:mr-[11.5rem]"><AiOutlineHome size={30} /></Link>
                 <AiOutlineSearch size={30} />
                 <AiOutlineShopping size={30} />
                 <Menu.Button className="inline-flex rounded-md text-sm font-medium shadow-sm focus:outline-none focus:ring-2 focus:ring-[#01DBB2] focus:ring-offset-2 focus:ring-offset-gray-100 transition-all"
