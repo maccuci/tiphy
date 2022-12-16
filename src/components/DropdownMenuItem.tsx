@@ -9,13 +9,14 @@ function classNames(...classes: string[]) {
 type Props = {
     href: string
     children: React.ReactNode
+    className?: string
 }
 
-export default function DropdownMenuItem({ href, children }: Props) {
+export default function DropdownMenuItem({ href, children, className }: Props) {
     return (
         <Menu.Item>
             {({active}) => (
-                <Link to={href} className={classNames(active ? 'bg-slate-300' : '', 'block px-4 py-2 text-sm')}>
+                <Link to={href} className={`${classNames(active ? 'bg-slate-300' : '', 'block px-4 py-2 text-sm')} ${className}`}>
                     {children}
                 </Link>
             )}
