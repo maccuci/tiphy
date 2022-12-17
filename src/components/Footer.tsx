@@ -1,6 +1,7 @@
 import { useForm } from 'react-hook-form'
 
 import { IoIosArrowForward } from 'react-icons/io'
+import { IoLogoVenmo } from 'react-icons/io5'
 import { TfiEmail } from 'react-icons/tfi'
 import { FiInstagram } from 'react-icons/fi'
 import { MdFacebook } from 'react-icons/md'
@@ -8,54 +9,55 @@ import { FaDiscord, FaGooglePay } from 'react-icons/fa'
 import { GrAmex } from 'react-icons/gr'
 import { SiApplepay, SiMastercard, SiPaypal, SiVisa, SiDiscover } from 'react-icons/si'
 import { TbBrandMeta } from 'react-icons/tb'
+
 import { isMobile } from 'react-device-detect'
 import { Link } from 'react-router-dom'
 
 export function Footer() {
     const { register, handleSubmit } = useForm()
     const renderMenuInMobile = () => {
-        if(isMobile) {
+        if (isMobile) {
             return (
                 <div>
-                <ul className="row mt-12 ml-8 mr-6 px-4 py-2 border border-none bg-gray-50 rounded-xl">
-                    <li>
-                        <a className='flex mt-2' href="#">
-                            <img src="https://cdn.shopify.com/s/files/1/0268/7297/1373/products/Halo96_Main01_221129_400x.jpg?v=1669707801" width={42} alt="" />
-                            <Link to={"/keyboards"} className='flex mt-2 ml-2.5'>
-                                Keyboards
-                                <IoIosArrowForward className='ml-[8.5rem] mt-1' />
-                            </Link>
-                        </a>
-                    </li>
-                    <li>
-                        <a className='flex' href="#">
-                            <img src="https://cdn.shopify.com/s/files/1/0268/7297/1373/products/Keycaps_ShiokazeMain01_221125_400x.jpg?v=1669632454" width={42} alt="" />
-                            <p className='flex mt-2 ml-2.5'>
-                                Keycaps
-                                <IoIosArrowForward className='ml-[9.5rem] mt-1' />
-                            </p>
-                        </a>
-                    </li>
-                    <li>
-                        <a className='flex' href="#">
-                            <img src="https://cdn.shopify.com/s/files/1/0268/7297/1373/products/bbk-test-1_400x.jpg?v=1657698141" width={42} alt="" />
-                            <p className='flex mt-2 ml-2.5'>
-                                Switches
-                                <IoIosArrowForward className='ml-[9.3rem] mt-1' />
-                            </p>
-                        </a>
-                    </li>
-                    <li className='mb-2'>
-                        <a className='flex' href="#">
-                            <img src="https://cdn.shopify.com/s/files/1/0268/7297/1373/products/ce0408aee6fc10ebe71929485034ce3b_400x.png?v=1659702361" width={42} alt="" />
-                            <p className='flex mt-2 ml-2.5'>
-                                Accessories
-                                <IoIosArrowForward className='ml-[8rem] mt-1' />
-                            </p>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+                    <ul className="row mt-12 ml-8 mr-6 px-4 py-2 border border-none bg-gray-50 rounded-xl">
+                        <li>
+                            <a className='flex mt-2' href="#">
+                                <img src="https://cdn.shopify.com/s/files/1/0268/7297/1373/products/Halo96_Main01_221129_400x.jpg?v=1669707801" width={42} alt="" />
+                                <Link to={"/collections/keyboards"} className='flex mt-2 ml-2.5'>
+                                    Keyboards
+                                    <IoIosArrowForward className='ml-[8.5rem] mt-1' />
+                                </Link>
+                            </a>
+                        </li>
+                        <li>
+                            <a className='flex' href="#">
+                                <img src="https://cdn.shopify.com/s/files/1/0268/7297/1373/products/Keycaps_ShiokazeMain01_221125_400x.jpg?v=1669632454" width={42} alt="" />
+                                <p className='flex mt-2 ml-2.5'>
+                                    Keycaps
+                                    <IoIosArrowForward className='ml-[9.5rem] mt-1' />
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a className='flex' href="#">
+                                <img src="https://cdn.shopify.com/s/files/1/0268/7297/1373/products/bbk-test-1_400x.jpg?v=1657698141" width={42} alt="" />
+                                <p className='flex mt-2 ml-2.5'>
+                                    Switches
+                                    <IoIosArrowForward className='ml-[9.3rem] mt-1' />
+                                </p>
+                            </a>
+                        </li>
+                        <li className='mb-2'>
+                            <a className='flex' href="#">
+                                <img src="https://cdn.shopify.com/s/files/1/0268/7297/1373/products/ce0408aee6fc10ebe71929485034ce3b_400x.png?v=1659702361" width={42} alt="" />
+                                <p className='flex mt-2 ml-2.5'>
+                                    Accessories
+                                    <IoIosArrowForward className='ml-[8rem] mt-1' />
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             )
         }
     }
@@ -69,7 +71,7 @@ export function Footer() {
                     <input className="bg-black text-white font-bold mt-2 px-6 py-2 rounded-r-xl" type="submit" value="&rarr;" />
                 </form>
             </div>
-            { renderMenuInMobile() }
+            {renderMenuInMobile()}
             <div className="grid grid-cols-2 gap-8 py-8 px-6 md:grid-cols-4">
                 <div>
                     <h3 className="mb-6 text-sm font-bold text-black">TiPhy Studio</h3>
@@ -144,30 +146,33 @@ export function Footer() {
                 </div>
                 <div>
                     <h3 className="mb-6 text-sm font-bold text-black">We accept</h3>
-                    <ul className="text-xs text-black flex gap-1">
+                    <ul className="text-xs text-black grid grid-flow-col gap-1">
                         <li className="mb-3">
-                            <a href="#"><GrAmex size={28} /></a>
+                            <p><GrAmex size={28} /></p>
                         </li>
                         <li className="mb-3">
-                            <a href="#"><SiApplepay size={28} /></a>
+                            <p><SiApplepay size={28} /></p>
                         </li>
                         <li className="mb-3">
-                            <a href="#"><SiDiscover size={28} /></a>
+                            <p><SiDiscover size={28} /></p>
                         </li>
                         <li className="mb-3">
-                            <a href="#"><TbBrandMeta size={28} /></a>
+                            <p><TbBrandMeta size={28} /></p>
                         </li>
                         <li className="mb-3">
-                            <a href="#"><FaGooglePay size={28} /></a>
+                            <p><FaGooglePay size={28} /></p>
                         </li>
                         <li className="mb-3">
-                            <a href="#"><SiMastercard size={28} /></a>
+                            <p><SiMastercard size={28} /></p>
                         </li>
                         <li className="mb-3">
-                            <a href="#"><SiPaypal size={28} /></a>
+                            <p><SiPaypal size={24} /></p>
+                        </li>
+                        <li className='mb-3'>
+                            <p><IoLogoVenmo size={28}/></p>
                         </li>
                         <li className="mb-3">
-                            <a href="#"><SiVisa size={28} /></a>
+                            <p><SiVisa size={28} /></p>
                         </li>
                     </ul>
                 </div>

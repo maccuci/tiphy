@@ -26,58 +26,58 @@ export default function SortKeyboardMenu({ className }: Props) {
             >
                 <Menu.Items className="absolute right-0 z-10 mt-9 w-56 origin-top-right rounded-md border border-zinc-400 bg-slate-50 shadow-xl ring-1 ring-black ring-opacity-5 focus:outline-none divide-zinc-400 ">
                     <div className="py-1">
-                        <DropdownMenuItem href='/keyboards'>
+                        <DropdownMenuItem href='/collections/keyboards'>
                             <div className="flex">
-                                <Link to={'/keyboards'} className='flex'>
+                                <Link to={'/collections/keyboards'} className='flex'>
                                     Featured
                                 </Link>
                             </div>
                         </DropdownMenuItem>
-                        <DropdownMenuItem href='/keycaps'>
+                        <DropdownMenuItem href='/collections/keycaps'>
                             <div className='flex'>
-                                <Link to={'/keyboards'} className='flex'>
+                                <Link to={'/collections/keyboards'} className='flex'>
                                     Best Selling
                                 </Link>
                             </div>
                         </DropdownMenuItem>
-                        <DropdownMenuItem href='/switches'>
+                        <DropdownMenuItem href='/collections/switches'>
                             <div className="flex">
-                                <Link to={'/keyboards'} className='flex'>
+                                <Link to={'/collections/keyboards'} className='flex'>
                                     Alphabetically, A-Z
                                 </Link>
                             </div>
                         </DropdownMenuItem>
-                        <DropdownMenuItem href='/accessories'>
+                        <DropdownMenuItem href='/collections/accessories'>
                             <div className="flex">
-                                <Link to={'/keyboards'} className='flex'>
+                                <Link to={'/collections/keyboards'} className='flex'>
                                     Alphabetically, Z-A
                                 </Link>
                             </div>
                         </DropdownMenuItem>
-                        <DropdownMenuItem href='/accessories'>
+                        <DropdownMenuItem href='/collections/accessories'>
                             <div className="flex">
-                                <Link to={'/keyboards'} className='flex'>
+                                <Link to={'/collections/keyboards'} className='flex'>
                                     Price, Low to High
                                 </Link>
                             </div>
                         </DropdownMenuItem>
-                        <DropdownMenuItem href='/accessories'>
+                        <DropdownMenuItem href='/collections/accessories'>
                             <div className="flex">
-                                <Link to={'/keyboards'} className='flex'>
+                                <Link to={'/collections/keyboards'} className='flex'>
                                     Price, High to Low
                                 </Link>
                             </div>
                         </DropdownMenuItem>
-                        <DropdownMenuItem href='/accessories'>
+                        <DropdownMenuItem href='/collections/accessories'>
                             <div className="flex">
-                                <Link to={'/keyboards'} className='flex'>
+                                <Link to={'/collections/keyboards'} className='flex'>
                                     Date, Old to New
                                 </Link>
                             </div>
                         </DropdownMenuItem>
-                        <DropdownMenuItem href='/accessories'>
+                        <DropdownMenuItem href='/collections/accessories'>
                             <div className="flex">
-                                <Link to={'/keyboards'} className='flex'>
+                                <Link to={'/collections/keyboards'} className='flex'>
                                     Date, New to Old
                                 </Link>
                             </div>

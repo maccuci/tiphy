@@ -37,10 +37,10 @@ export default function DropdownMenu({ className }: Props) {
                         <div className="px-3 py-2 uppercase font-bold text-xs">
                             Categories
                         </div>
-                        <DropdownMenuItem href='/keyboards'>
+                        <DropdownMenuItem href='/collections/keyboards'>
                             <div className="flex">
                                 <img src="https://cdn.shopify.com/s/files/1/0268/7297/1373/products/Halo96_Main01_221129_400x.jpg?v=1669707801" width={32} alt="" className='mr-1' />
-                                <Link to={'/keyboards'} className='flex'>
+                                <Link to={'/collections/keyboards'} className='flex'>
                                     Keyboards
                                     <IoIosArrowForward className='ml-[5rem] mt-1' />
                                 </Link>

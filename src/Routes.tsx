@@ -9,7 +9,7 @@ export default function AppRoutes() {
         <Router>
             <Routes>
                 <Route path='/' element={<Index/>}/>
-                <Route path='/keyboards' element={<Keyboards/>}/>
+                <Route path='/collections/keyboards' element={<Keyboards/>}/>
             </Routes>
         </Router>
     )

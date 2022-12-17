@@ -4,8 +4,6 @@ import { Navbar } from "../components/Navbar"
 import SortKeyboardMenu from "../components/SortKeyboardMenu"
 import styles from '../styles/header.module.css'
 
-
-
 export default function Keyboards() {
     return (
         <div>

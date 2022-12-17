@@ -16,14 +16,14 @@ function renderNavbar() {
         return (
             <div className="flex justify-around">
                 <div className="w-28 h-14 mt-3">
-                    <Link to={''}><AiOutlineHome size={30} /></Link>
+                    <Link to={'/'}><AiOutlineHome size={30} /></Link>
                 </div>
                 <div className="">
                     <ul className="flex justify-center font-bold gap-6 mt-4">
-                        <li className="hover:underline underline-offset-[16px] decoration-2"><Link to={'/keyboards'}>Keyboards</Link></li>
-                        <li className="hover:underline underline-offset-[16px] decoration-2"><Link to={'/keycaps'}>Keycaps</Link></li>
-                        <li className="hover:underline underline-offset-[16px] decoration-2"><Link to={'/switches'}>Switches</Link></li>
-                        <li className="hover:underline underline-offset-[16px] decoration-2"><Link to={'/accessories'}>Accessories</Link></li>
+                        <li className="hover:underline underline-offset-[16px] decoration-2"><Link to={'/collections/keyboards'}>Keyboards</Link></li>
+                        <li className="hover:underline underline-offset-[16px] decoration-2"><Link to={'/collections/keycaps'}>Keycaps</Link></li>
+                        <li className="hover:underline underline-offset-[16px] decoration-2"><Link to={'/collections/switches'}>Switches</Link></li>
+                        <li className="hover:underline underline-offset-[16px] decoration-2"><Link to={'/collections/accessories'}>Accessories</Link></li>
                     </ul>
                 </div>
                 <div className="flex-none">
