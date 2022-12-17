@@ -1,19 +1,29 @@
 import { Menu, Transition } from "@headlessui/react"
-import { Fragment } from "react"
+import { Fragment, useState, useEffect } from "react"
 import DropdownMenuItem from "./DropdownMenuItem"
 import { Link } from "react-router-dom"
+import { IoIosArrowDown } from 'react-icons/io'
 
 interface Props {
     className?: string
+    filter: string
 }
 
-export default function SortKeyboardMenu({ className }: Props) {
+export default function SortKeyboardMenu({ className, filter }: Props) {
+    const [filtred, setFiltred] = useState<string>()
+
+    function handleFilter() {
+        useEffect(() => {
+            setFiltred(filter)
+        }, [])
+    }
+
     return (
         <Menu as="div" className={`${className} relative flex justify-end mr-4`}>
             <div className="lg:mt-2 gap-2">
                 <Menu.Button className="flex justify-end border border-[#01DBB2] px-4 py-1 rounded-md text-sm font-medium shadow-sm focus:outline-none focus:ring-2 focus:ring-[#01DBB2] focus:ring-offset-2 focus:ring-offset-gray-100 transition-all"
                     arial-label="Sort Menu">
-                    <p>Sort</p>
+                    <p className="flex">{filter} <IoIosArrowDown className="mt-1 ml-2"/></p>
                 </Menu.Button>
             </div>
             <Transition
@@ -28,9 +38,9 @@ export default function SortKeyboardMenu({ className }: Props) {
                     <div className="py-1">
                         <DropdownMenuItem href='/collections/keyboards'>
                             <div className="flex">
-                                <Link to={'/collections/keyboards'} className='flex'>
-                                    Featured
-                                </Link>
+                                {/* <Link to={'/collections/keyboards'} className='flex'> */}
+                                    <span onClick={handleFilter}>{filtred}</span>
+                                {/* </Link> */}
                             </div>
                         </DropdownMenuItem>
                         <DropdownMenuItem href='/collections/keycaps'>

@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@headlessui/react": "^1.7.6",
+    "@headlessui/tailwindcss": "^0.1.2",
+    "@heroicons/react": "^2.0.13",
     "react": "^18.2.0",
     "react-device-detect": "^2.2.2",
     "react-dom": "^18.2.0",
